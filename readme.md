@@ -1,7 +1,7 @@
 
 ## ZMK config for chalk keyboard
 
-### Guide
+### Firmware compilation guide
 #### Local
 This repo uses [zmk-nix](https://github.com/lilyinstarlight/zmk-nix) to build the firmware locally with nix.
 
@@ -16,7 +16,8 @@ This repo uses [zmk-nix](https://github.com/lilyinstarlight/zmk-nix) to build th
 
 6. Run `nix build .` to build the firmware
 7. The firmware will be located in `/result`
-8. Flash the firmware with 
+8. Put the keyboard in bootloader mode by pressing the reset button, while it is plugged in to the computer
+9. Flash the firmware with 
 ```bash
 cp /result/.. /Volumes/..
 ```
@@ -28,3 +29,5 @@ cp /result/.. /Volumes/..
 3. make changes
 4. push to your fork
 5. download firmware from the actions tab
+6. Prese the rest button on the keyboard, while its plugged in to the computer to enter bootloader mode
+7. Drag the firmware file to the keyboard drive
