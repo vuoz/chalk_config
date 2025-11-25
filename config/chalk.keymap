@@ -46,15 +46,14 @@
             linux_function_layer{
                 key-positions = <37 40>;  
                 timeout-ms = <50>;         
-                layers = <5>;               
+                layers = <4>;               
                 bindings = <&mo 8>;         
             };
             linux_layers{
-                key-positions = <23 27>;  
+                key-positions = <23 37>;  
                 timeout-ms = <50>;         
                 layers = <0 4>;               
                 bindings = <&tog 4>;         
-
             };
         };  
 

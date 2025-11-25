@@ -19,8 +19,9 @@
 
         board = "seeeduino_xiao_ble";
         shield = "chalk_%PART%";
-        snippets = ["zmk-usb-logging" "studio-rpc-usb-uart"];
-        extraCmakeArgs =[ "-DCONFIG_ZMK_STUDIO"];
+        snippets = [ "studio-rpc-usb-uart"];
+        #extraCmakeFlags =[];
+        enableZmkStudio = true;
 
         zephyrDepsHash = "sha256-SHiCGErcstMH9EbvbQROXIhxFEbMf3AungYu5YvqMEg=";
         meta = {
