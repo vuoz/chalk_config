@@ -1,0 +1,32 @@
+
+#include "chalk.dtsi"
+#include <dt-bindings/zmk/matrix_transform.h>
+
+/ {
+    esb_split {
+        compatible = "zmk,esb-split";
+        // These are arbitrary default addresses. In end user products
+        // different addresses should be used for each set of devices.
+        base-addr-0 = <0x8d 0x6b 0x28 0x29>;
+        base-addr-1 = <0xd7 0xd5 0x01 0x0c>;
+        addr-prefix = <0xf8 0xca 0xfa 0x5b 0x12 0xb5 0xc0 0x73>;
+    };
+
+
+}
+
+
+/ {
+    chosen {
+        zmk,kscan = &mock_kscan;
+        zmk,physical-layout = &physical_layout0;
+    };
+    mock_kscan: kscan_1 {
+        compatible = "zmk,kscan-mock";
+        columns = <0>;
+        rows = <0>;
+        events = <0>;
+    };
+       
+
+}
