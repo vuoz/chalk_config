@@ -11,9 +11,7 @@
         base-addr-1 = <0xd7 0xd5 0x01 0x0c>;
         addr-prefix = <0xf8 0xca 0xfa 0x5b 0x12 0xb5 0xc0 0x73>;
     };
-
-
-}
+};
 
 
 / {
@@ -27,6 +25,4 @@
         rows = <0>;
         events = <0>;
     };
-       
-
-}
+};
