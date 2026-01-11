@@ -1,18 +1,5 @@
 #include "chalk.dtsi" 
 
-
-
-/ {
-    esb_split {
-        compatible = "zmk,esb-split";
-        // These are arbitrary default addresses. In end user products
-        // different addresses should be used for each set of devices.
-        base-addr-0 = <0x8d 0x6b 0x28 0x29>;
-        base-addr-1 = <0xd7 0xd5 0x01 0x0c>;
-        addr-prefix = <0xf8 0xca 0xfa 0x5b 0x12 0xb5 0xc0 0x73>;
-    };
-};
-
 /{
     chosen {
         zmk,kscan = &kscan;
@@ -30,12 +17,12 @@
                     , <&xiao_d 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
                     ;
 
-        col-gpios = <&xiao_d 4  GPIO_ACTIVE_HIGH>
-                    , <&xiao_d 5  GPIO_ACTIVE_HIGH>
-                    , <&xiao_d 6  GPIO_ACTIVE_HIGH>
-                    , <&xiao_d 7  GPIO_ACTIVE_HIGH>
+        col-gpios = <&xiao_d 9  GPIO_ACTIVE_HIGH>
                     , <&xiao_d 8  GPIO_ACTIVE_HIGH>
-                    , <&xiao_d 9  GPIO_ACTIVE_HIGH>
+                    , <&xiao_d 7  GPIO_ACTIVE_HIGH>
+                    , <&xiao_d 6  GPIO_ACTIVE_HIGH>
+                    , <&xiao_d 5  GPIO_ACTIVE_HIGH>
+                    , <&xiao_d 4  GPIO_ACTIVE_HIGH>
                     ;
     };
 };
@@ -43,4 +30,5 @@
 &default_transform {
     col-offset = <6>;
 };
+
 
