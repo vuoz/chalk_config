@@ -1,4 +1,4 @@
-if SHIELD_CHALK_LEFT
+if SHIELD_CHALK_DONGLE
 
 config ZMK_KEYBOARD_NAME
     default "Chalk"
