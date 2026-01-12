@@ -4,7 +4,7 @@ include:
 
   - board: zongle
     shield: chalk_dongle
-    snippet: studio-rpc-usb-uart zmk-usb-logging
+    snippet: studio-rpc-usb-uart 
     cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=y
 
   - board: xiao_ble 
