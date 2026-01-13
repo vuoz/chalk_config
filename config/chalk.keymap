@@ -39,26 +39,26 @@
     
             fourth_layer_combo {
                 key-positions = <37 40>;  
-                timeout-ms = <50>;         
+                timeout-ms = <100>;         
                 layers = <0>;               
                 bindings = <&mo 3>;         
             };
             linux_function_layer{
                 key-positions = <37 40>;  
-                timeout-ms = <50>;         
+                timeout-ms = <100>;         
                 layers = <4>;               
                 bindings = <&mo 8>;         
             };
             linux_layers{
                 key-positions = <23 37>;  
-                timeout-ms = <50>;         
+                timeout-ms = <100>;         
                 layers = <0 4>;               
                 bindings = <&tog 4>;         
             };
             // this should allow for entering bootloader mode on the dongle with a key combo, otherwise one would have to press the very tiny reset button on the dongle
             reset{
                 key-positions = <36 41>;
-                timeout-ms = <50>;
+                timeout-ms = <100>;
                 layers = <0 1 2 3 4 5 6 7 8>;
                 bindings = <&bootloader>;
 
