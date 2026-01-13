@@ -55,6 +55,14 @@
                 layers = <0 4>;               
                 bindings = <&tog 4>;         
             };
+            // this should allow for entering bootloader mode on the dongle with a key combo, otherwise one would have to press the very tiny reset button on the dongle
+            reset{
+                key-positions = <37 42>;
+                timeout-ms = <50>;
+                layers = <0>;
+                bindings = <&bootloader>;
+
+            };
         };  
 
 
