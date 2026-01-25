@@ -23,7 +23,7 @@
         #extraCmakeFlags =[];
         enableZmkStudio = true;
 
-        zephyrDepsHash = "sha256-SHiCGErcstMH9EbvbQROXIhxFEbMf3AungYu5YvqMEg=";
+        zephyrDepsHash = "sha256-/J4KOCKOZQV2oqoy6I3Bzq19OC123K4Y/baKU1M/i6s=";
         meta = {
           description = "ZMK firmware";
           license = nixpkgs.lib.licenses.mit;
@@ -37,7 +37,7 @@
           src = nixpkgs.lib.sourceFilesBySuffices self [ ".board" ".cmake" ".conf" ".defconfig" ".dts" ".dtsi" ".h" ".json" ".keymap" ".overlay" ".shield" ".yaml" ".yml" "_defconfig" ];
           board = "seeeduino_xiao_ble";
           shield = "settings_reset";
-          zephyrDepsHash = "sha256-SHiCGErcstMH9EbvbQROXIhxFEbMf3AungYu5YvqMEg=";
+          zephyrDepsHash = "sha256-/J4KOCKOZQV2oqoy6I3Bzq19OC123K4Y/baKU1M/i6s=";
           meta = {
             description = "ZMK settings reset firmware";
             license = nixpkgs.lib.licenses.mit;
