@@ -1,11 +1,11 @@
 
 ---
 include:
-  - board: xiao_ble 
+  - board: xiao_ble//zmk 
     shield: chalk_left 
     group: central
-  - board: xiao_ble 
+  - board: xiao_ble//zmk 
     shield: chalk_right  
-  - board: xiao_ble 
+  - board: xiao_ble//zmk 
     shield: settings_reset
     group: peripheral
