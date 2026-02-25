@@ -1,11 +1,12 @@
 
 ---
 include:
-  - board: xiao_ble//zmk 
+  - board: seeeduino_xiao_ble
     shield: chalk_left 
+    snippet: zmk-usb-logging
     group: central
-  - board: xiao_ble//zmk 
+  - board: seeeduino_xiao_ble
     shield: chalk_right  
-  - board: xiao_ble//zmk 
+  - board: seeeduino_xiao_ble
     shield: settings_reset
     group: peripheral
