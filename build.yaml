@@ -3,7 +3,6 @@
 include:
   - board: seeeduino_xiao_ble
     shield: chalk_left 
-    snippet: zmk-usb-logging
     group: central
   - board: seeeduino_xiao_ble
     shield: chalk_right  
